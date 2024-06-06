@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from mqtt_dynamodb_stack import MqttDynamodbStack
+from mqtt.mqtt_dynamodb_stack import MqttDynamoDBStack
 
 
 app = cdk.App()
 
-MqttDynamodbStack(app, "MqttDynamodbStack")
+MqttDynamoDBStack(app, "MqttDynamoDBStack")
 
 app.synth()
